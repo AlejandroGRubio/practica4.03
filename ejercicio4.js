@@ -7,7 +7,7 @@ window.onload = () => {
 
     var doc = window.document;
 
-
+    //Mira y va cambiando las poblaciones según las provincias.
     doc.getElementById(`provinciaSelect`).addEventListener(`click`, () => {
 
         if (doc.getElementById(`provincia`).value == `alicante`) {
@@ -25,12 +25,7 @@ window.onload = () => {
             }
             else{
                 doc.getElementById(`poblacionAliOculto`).id = `poblacionAli`; 
-            }
-           
-            
-            
-
-            
+            }     
 
         }
         else if (doc.getElementById(`provincia`).value == `castellon`) {
@@ -50,9 +45,6 @@ window.onload = () => {
                 doc.getElementById(`poblacionCasOculto`).id = `poblacionCas`;
             }
 
-            
-
-
         }
         else if (doc.getElementById(`provincia`).value == `valencia`) {
 
@@ -70,9 +62,7 @@ window.onload = () => {
             }
             else{
                 doc.getElementById(`poblacionValOculto`).id = `poblacionVal`;
-            }
-
-            
+            }         
 
         }
         else if (doc.getElementById(`provincia`).value == `nada`) {
@@ -89,13 +79,11 @@ window.onload = () => {
                 doc.getElementById(`poblacionCas`).id = `poblacionCasOculto`;
             }
 
-
         }
-
 
     });
 
-
+    //Añade una linea diciendo si es correcta la selección de provincias y poblaciones.
     doc.getElementById(`submit`).addEventListener(`click`, () => {
 
        
@@ -152,23 +140,8 @@ window.onload = () => {
             insertarEtiquetaById(`p`, `Seleccione una provincia correcta.`, `si`, `texto`);
 
         }
-        
-
-
-        
-
-
+  
 
     });
-
-
-    
-
-
-
-    
-
-
-
 
 } //Fin del código onload.
