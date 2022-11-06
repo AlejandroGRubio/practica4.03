@@ -1,0 +1,15 @@
+.oculto{
+    display: none;
+}
+.discos{
+    background-color: bisque;
+    border: 1px,black;
+    border-style: dotted;
+    text-align: center;
+
+
+}
+.error{
+    color: red;
+    text-decoration: underline;
+}

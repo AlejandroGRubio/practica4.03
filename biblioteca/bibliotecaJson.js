@@ -39,3 +39,36 @@ export function crearDisco(datosObj, nomId) {
     return cont;
 
 }
+
+
+
+//Valida los datos del disco según se pedia.
+export function validarDatosDisco(datosObj) {
+    
+    var expNombre = new RegExp("^.{5,}$");
+    var expAnyo = new RegExp("^[0-9]{4}$");
+    var expLocalizador = new RegExp("^[A-Z]{2}[-]{1}[0-9]{3}[A-Z]{2}$");
+
+    if (expNombre.test(datosObj[`nombreDisco`]) == false) {
+        console.log(`errorNombreDisco`);
+        return false;
+    }
+    if (expNombre.test(datosObj[`grupoInterp`]) == false) {
+        console.log(`errorGrupo`);
+        return false;
+    }
+    if (expAnyo.test(datosObj[`anyoPubli`]) == false) {
+        console.log(`errorAño`);
+        return false;
+    }
+    if (expLocalizador.test(datosObj[`localizacion`]) == false) {
+        console.log(`errorLocaliza`);
+        return false;
+    }
+
+
+    return true;
+
+
+
+}

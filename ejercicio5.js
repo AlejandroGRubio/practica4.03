@@ -1,7 +1,7 @@
 "use strict";
 
-import { sacarTextoInputText, crearDisco } from "./biblioteca/bibliotecaJson.js";
-
+import { sacarTextoInputText, crearDisco, validarDatosDisco } from "./biblioteca/bibliotecaJson.js";
+import { generarTextoError, quitarTextoError } from "./biblioteca/bibliotecaEj.js";
 
 window.onload = () => {
 
@@ -15,7 +15,6 @@ window.onload = () => {
     doc.getElementById(`guardar`).addEventListener(`click`, () => {
 
         let obj = {};
-
 
         obj.nombreDisco = sacarTextoInputText(`nombreDisco`);
 
@@ -34,7 +33,18 @@ window.onload = () => {
             obj.prestamo = true;
         }
 
-        discos.push(obj);
+        if (validarDatosDisco(obj) == true) {
+            quitarTextoError(`error`, `oculto`);
+            discos.push(obj);
+        }
+        else{
+            generarTextoError(`Datos erroneos, compruebalos`, `error`,`verDiscos`);
+        }
+
+
+
+
+        
 
     });
 

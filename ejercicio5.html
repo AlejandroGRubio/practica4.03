@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ejercicio3.css">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <p>
+        <label for="nombreDisco">Nombre del disco: </label>
+        <input type="text" name="nombreDisco" id="nombreDisco">
+    </p>
+    
+    <p>
+        <label for="grupoInterp">Grupo o intérprete: </label>
+        <input type="text" name="grupoInterp" id="grupoInterp">
+    </p>
+
+    <p>
+        <label for="anyoPubli">Año de publicación: </label>
+        <input type="number" name="anyoPubli" id="anyoPubli">
+    </p>
+
+    <p>
+        <label for="tipoMusica">Tipo de música: </label>
+        <select name="tipoMusica" id="tipoMusica">
+
+            <option value="rock">Rock</option>
+            <option value="progressive">Progressive</option>
+            <option value="punk">Punk</option>
+            <option value="trash">Trash</option>
+    
+    
+        </select>
+    </p>
+
+    <p>
+        <label for="localizacion">Localización / nº estanteria: </label>
+        <input type="text" name="localizacion" id="localizacion">
+    </p>
+
+    <p> Prestado: 
+        <input type="radio" name="prestamo" id="true" value="true">
+        <label for="true">Si</label>
+        <input type="radio" name="prestamo" id="false" value="false" checked="true">
+        <label for="false">No</label>
+
+    </p>
+
+    <button id="guardar">Guardar</button>
+    <button id="mostrar">Mostrar</button>
+    <p id="verDiscos">
+
+    </p>
+
+
+    <script type="module" src="./ejercicio5.js"></script>
+</body>
+</html>
