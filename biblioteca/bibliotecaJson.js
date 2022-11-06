@@ -3,7 +3,7 @@
 
 var doc = window.document;
 
-
+//Saca el value del input.
 export function sacarTextoInputText(nomId) {
     
 
@@ -15,7 +15,7 @@ export function sacarTextoInputText(nomId) {
 
 }
 
-
+//Crea un div con los diferentes datos del objeto.
 export function crearDisco(datosObj, nomId) {
     
 
