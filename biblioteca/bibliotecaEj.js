@@ -144,7 +144,7 @@ export function generarEtiquetaConClase(etiqueta, texto, nomClase) {
 
 }
 //Inserta una etiqueta.
-export function insertarEtiquetaById(etiqueta, texto, nomClase, ubiId) {
+export function insertarEtiquetaById(etiqueta, texto, nomClase = ``, ubiId) {
     
     var cont = doc.getElementById(ubiId);
 
