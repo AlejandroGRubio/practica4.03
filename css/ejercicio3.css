@@ -2,9 +2,10 @@
     display: none;
 }
 .discos{
-
-    border: 0.2em, black solid;
     background-color: bisque;
+    border: 1px,black;
+    border-style: dotted;
+    text-align: center;
 
 
 }
